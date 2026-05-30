@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'karla', sans-serif;
+}
+
+body {
+    font-weight: 400;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.logo {
+    width: 120px;
+    height: 70px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav-links {
+    display: flex;
+    gap: 45px;
+    list-style: none;
+    align-items: center;
+    margin: 0 10px;
+    padding: 0;
+    height: 80px;
+}
+
+.nav-links li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    height: 100%;
+}
+
+.nav-item a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+}
+
+.nav-item img {
+    width: 44px;
+    height: 44px;
+}
+
+.nav-links li a {
+    font-size: 20px;
+    color: #5FA101;
+    font-weight: 400;
+    margin: 0;
+}
+
+.categorias {
+    display: flex;
+    width: 100%;
+}
+
+.btn-categoria {
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 20px 0;
+
+}
+
+.dulceria {
+    background-color: #5FA101;
+    font-size: 32px;
+
+}
+
+.regalos {
+    background-color: #93DA00;
+    font-family: 'karla', sans-serif, bold;
+    font-size: 32px;
+}
+
+.banner-fondo {
+    width: 100%;
+    background-color: #343434;
+    margin: 0;
+    padding: 80px 10px 0px 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.banner-fondo img {
+    width: 100%;
+    height: 600px;
+}
+
+.opciones {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 0;
+}
+
+.btn-opciones {
+    background-color: #343434;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 30px 80px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.productos {
+    margin: 50px 50px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    border: 4px solid #5FA101;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.productos img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.btn-productos {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5fa101;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 18px 0;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
+
+.vidoPromocional video {
+    width: 100%;
+    min-height: 320px;
+    height: auto;
+    display: block;
+    background-color: #000;
+}
+
+.vidoPromocional {
+    margin: 0px 0px;
+    width: 100%;
+    padding:0%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.vidoPromocional video  {
+    width: 1000px;
+}
+.productos-video {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+    margin: 20px 20px;
+}
+.tarjeta-video {
+    display: flex;
+    width: 171px;
+    height: 171px;
+    flex-direction: center;
+   
+    gap: 20px;
+}
