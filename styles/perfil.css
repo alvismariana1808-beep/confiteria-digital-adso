@@ -1,0 +1,71 @@
+/* .fondo{
+    width: 100%;
+    height: 200px;
+    background-color: #343434;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 50px;
+}
+
+ Logo 
+.pie-de-pagina{
+    width: 203px;
+    height: 115px;
+}
+
+.pie-de-pagina img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+Línea vertical 
+.separador{
+    width: 1px;
+    height: 120px;
+    background-color: #A6A7A4;
+}
+
+Información 
+.informacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    gap: 10px;
+}
+
+.informacion h2{
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.informacion p{
+    font-size: 18px;
+}
+
+/* Redes 
+.Redes-sociales{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    color: white;
+}
+
+.Redes-sociales h2{
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.iconos-redes{
+    display: flex;
+    gap: 15px;
+}
+
+.iconos-redes img{
+    width: 40px;
+    height: 40px;
+}*/
