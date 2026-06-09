@@ -128,21 +128,27 @@ header {
 }
 
 .fondo-ranking {
-   margin-top: 0px;
-    border: none;
-    border-top: 85px solid #70A327;
-    transform: rotate(180deg);
+  
     width: 100%;
+    height: 85px;
+    background-color: #70A327;
+    padding: 40px 0;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
+.ranking {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
 .ranking p {
-    font-size: 30px;
+    font-size: 50px;
     color: #fff;
     font-weight: 400;
+    margin: 0;
     text-align: center;
-    transform: rotate(180deg);
-    font-family: 'karla', sans-serif, bold;
+    font-family: 'Konkhmer Sleokchher', sans-serif, bold;
 }
