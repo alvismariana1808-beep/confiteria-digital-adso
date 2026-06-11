@@ -7,6 +7,7 @@
     /* Hace que el ancho y alto incluyan padding y borde.*/
     font-family: 'karla', sans-serif;
     /*define el tipo de letra*/
+    box-sizing: border-box;
 }
 
 body {
@@ -54,7 +55,8 @@ header {
 }
 
 .nav-links li {
-    display: flex;           /**/
+    display: flex;
+    /**/
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -129,12 +131,14 @@ header {
 
 .slider {
     width: 100%;
-    overflow: hidden; /* Oculta las imágenes que salen de la pantalla */
+    overflow: hidden;
+    /* Oculta las imágenes que salen de la pantalla */
 }
 
 .slides {
     display: flex;
-    width: 300%; /* 3 imágenes */
+    width: 300%;
+    /* 3 imágenes */
     animation: rotare 9s infinite ease-in-out;
 }
 
@@ -146,15 +150,18 @@ header {
 
 @keyframes rotare {
 
-    0%, 30% {
+    0%,
+    30% {
         transform: translateX(0);
     }
 
-    33%, 63% {
+    33%,
+    63% {
         transform: translateX(-33.333%);
     }
 
-    66%, 96% {
+    66%,
+    96% {
         transform: translateX(-66.666%);
     }
 
@@ -195,12 +202,15 @@ header {
 
 .card {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
+    /*Ordena los elementos verticalmente (de arriba hacia abajo).*/
+    flex-direction: column;
+    /*Ordena los elementos en columnas*/
     gap: 20px;
     border: 4px solid #70A327;
     border-radius: 12px;
     overflow: hidden;
+    /* flex-direction: column;*/
     padding-bottom: 10px;
     position: relative;
 }
@@ -218,7 +228,8 @@ header {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 85px; /* justo encima del botón */
+    bottom: 85px;
+    /* justo encima del botón */
 
     display: flex;
     justify-content: space-between;
@@ -258,13 +269,14 @@ header {
 }
 
 .card:hover .info-producto {
-    
+
     opacity: 1;
 }
 
 .card:hover img {
     transform: scale(0.8);
 }
+
 .card:hover {
     border-color: #DB971A;
 }
@@ -276,20 +288,23 @@ header {
 .btn-productos {
     display: flex;
     justify-content: center;
+    /* centra los elementos horizontalmente*/
     align-items: center;
-
-    width: calc(100% - 20px);
+    /* centra los elementos verticalmente*/
     margin: 0 auto;
+    /*centra horizontalmente el elemento si tiene un ancho menor que su contenedor. */
     background-color: #70A327;
     color: white;
     font-size: 22px;
+    /* tamaño de la fuente*/
     font-weight: 700;
     text-decoration: none;
+    /*elimina las decoraciones del texto*/
     padding: 18px 0;
     width: 100%;
     border-radius: 0;
-
     transition: background-color .3s ease;
+    /*horizontalmente el elemento si tiene un ancho menor que su contenedor.*/
 }
 
 .vidoPromocional {
@@ -300,6 +315,7 @@ header {
     flex-direction: row;
     /*Los elementos quedan uno al lado del otro.*/
     justify-content: space-around;
+    /*Distribuye los elementos a lo largo del eje principal dejando espacio alrededor de cada uno.*/
     align-items: center;
 }
 
@@ -318,9 +334,15 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    /*Centra los elementos.*/
     /*Alinea los elementos verticalmente.*/
     flex-direction: column;
+    /*Organiza los elementos verticalmente*/
     gap: 20px;
+}
+
+.reproducir-video {
+     display: none;
 }
 
 .tarjeta-video {
@@ -546,31 +568,55 @@ header {
 
 @media (max-width: 1024px) {
 
+
     /* HEADER */
     header {
         flex-direction: column;
-        gap: 20px;
+        gap: 15px;
         padding: 20px;
     }
 
+    /* Logo más protagonista */
+    .logo {
+        width: 280px;
+        height: 140px;
+    }
+
+    /* Menú más compacto */
     .nav-links {
         gap: 25px;
+        height: auto;
+    }
+
+    /* Iconos un poco más pequeños */
+    .nav-item img {
+        width: 30px;
+        height: 30px;
+    }
+
+    /* Texto más discreto */
+    .nav-links li a {
+        font-size: 16px;
     }
 
     /* BANNER */
     .slides img {
-        height: 350px;
+        height: 280px;
     }
 
     /* OPCIONES */
     .opciones {
-        flex-wrap: wrap;
-        justify-content: center;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        gap: 10px;
     }
 
     .btn-opciones {
-        font-size: 24px;
-        padding: 20px 40px;
+        flex: 1;
+        font-size: 18px;
+        padding: 15px 10px;
+        text-align: center;
     }
 
     /* PRODUCTOS */
@@ -619,42 +665,87 @@ header {
         height: auto;
     }
 
-    /* FOOTER */
+
     .fondo {
-        flex-wrap: wrap;
+        display: flex;
+        flex-wrap: nowrap;
+        /* evita que bajen */
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 20px;
         height: auto;
-        padding: 30px;
-        gap: 20px;
+        gap: 15px;
+        border: none !important;
+        outline: none !important;
+        box-shadow: none !important;
     }
 
+    .pie-de-pagina {
+        width: 180px;
+        height: 100px;
+        flex-shrink: 0;
+    }
+
+    .informacion h2,
+    .Redes-sociales h2 {
+        font-size: 24px;
+    }
+
+    .informacion p,
+    .ubicación p {
+        font-size: 16px;
+    }
+
+    .iconos img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .separador {
+        height: 90px;
+    }
+
+    .fondo hr {
+        width: 90px;
+    }
 }
 
 @media (max-width: 767px) {
 
     /* HEADER */
     header {
+        flex-direction: column;
+        align-items: center;
         padding: 15px;
+        gap: 15px;
     }
 
+    /* Logo más visible */
     .logo {
-        width: 90px;
+        width: 320px;
+        max-width: 90%;
+    }
+
+    .logo img {
+        width: 100%;
         height: auto;
     }
 
+    /* Menú más discreto */
     .nav-links {
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         justify-content: center;
-        gap: 15px;
+        gap: 12px;
         height: auto;
     }
 
     .nav-links li a {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .nav-item img {
-        width: 32px;
-        height: 32px;
+        width: 24px;
+        height: 24px;
     }
 
     /* BOTONES DULCERÍA Y REGALOS */
@@ -669,19 +760,20 @@ header {
     }
 
     .slides img {
-        height: 200px;
+        height: 170px;
     }
 
     /* OPCIONES */
     .opciones {
         flex-direction: column;
         gap: 0;
+
     }
 
     .btn-opciones {
         width: 100%;
-        padding: 15px;
-        font-size: 18px;
+        padding: 10px;
+        font-size: 14px;
     }
 
     /* PRODUCTOS */
@@ -750,29 +842,46 @@ header {
 
     /* HEADER */
     header {
-        padding: 15px;
-    }
-
-    .logo {
-        width: 90px;
-        height: auto;
-    }
-
-    .nav-links {
-        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         justify-content: center;
-        gap: 15px;
-        height: auto;
+        padding: 20px 15px;
+        gap: 25px;
     }
 
-    .nav-links li a {
-        font-size: 16px;
+    /* Logo más grande y centrado */
+    .logo {
+        width: 220px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .logo img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    /* Menú */
+    .nav-links {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: nowrap;
+        height: auto;
+        margin: 0;
     }
 
     .nav-item img {
-        width: 32px;
-        height: 32px;
+        width: 26px;
+        height: 26px;
     }
+
+    .nav-links li a {
+        font-size: 14px;
+    }
+
 
     /* BOTONES DULCERÍA Y REGALOS */
     .btn-categoria {
@@ -786,7 +895,7 @@ header {
     }
 
     .slides img {
-        height: 200px;
+        height: 164px;
     }
 
     /* OPCIONES */
@@ -831,13 +940,32 @@ header {
     }
 
     .productos-videos {
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .reproducir-video {
+        display: flex;
+    }
+
+    .reproducir-video img {
+        width: 80px;
+        height: 80px;
+        object-fit: contain;
+        margin-top: 10px;
+    }
+
+    .tarjeta-video {
+        width: 100%;
+        margin-top: 20px;
     }
 
     /* IMÁGENES */
     .imagenes {
         margin: 20px;
         gap: 20px;
+        
     }
 
     /* FOOTER */
@@ -862,4 +990,3 @@ header {
     }
 
 }
-
