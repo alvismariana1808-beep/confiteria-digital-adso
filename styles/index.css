@@ -7,7 +7,7 @@
     /* Hace que el ancho y alto incluyan padding y borde.*/
     font-family: 'karla', sans-serif;
     /*define el tipo de letra*/
-    box-sizing: border-box;
+    /*box-sizing: border-box;
 }
 
 body {
@@ -332,7 +332,7 @@ header {
 
 #btn-video-bombones:checked ~ .video-container #video-bombones,
 #btn-video-gomitas:checked ~ .video-container #video-gomitas,
-#btn-video-paleta:checked ~ .video-container #video-paleta {
+#btn-video-paleta:checked ~ .video-container #video-paleta {  /*Si está seleccionado el botón, muestra el video del boton seleccionado.*/
     display: block;
 }
 
