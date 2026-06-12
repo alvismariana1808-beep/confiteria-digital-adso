@@ -201,26 +201,40 @@
     </section>
 
     <!-- VIDEO PROMOCIONAL -->
+    <!-- VIDEO PROMOCIONAL -->
     <section class="vidoPromocional">
+        <!-- Controles CSS para cambiar de video -->
+        <input type="radio" name="video-select" id="btn-video-bombones" checked style="display: none;">
+        <input type="radio" name="video-select" id="btn-video-gomitas" style="display: none;">
+        <input type="radio" name="video-select" id="btn-video-paleta" style="display: none;">
+
         <div class="video-container">
-            <video controls muted loop>
+            <video id="video-bombones" controls muted loop>
                 <source src="assets/videos/videobombones.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+            <video id="video-gomitas" controls muted loop>
+                <source src="assets/videos/gomitas.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+            <video id="video-paleta" controls muted loop>
+                <source src="assets/videos/paleta.mp4" type="video/mp4">
                 Tu navegador no soporta el elemento de video.
             </video>
         </div>
         <div class="productos-videos">
-            <div class="tarjeta-video activo">
+            <label class="tarjeta-video" for="btn-video-bombones" id="label-bombones">
                 <img src="./assets/images/dulceria/Chupachups.png" alt="Chupachups">
                 <p>Bombones Chupachups</p>
-            </div>
-            <div class="tarjeta-video">
+            </label>
+            <label class="tarjeta-video" for="btn-video-gomitas" id="label-gomitas">
                 <img src="./assets/images/dulceria/GomiAzucaradas.png" alt="gomitas azucaradas">
                 <p>Gomitas Azucaradas</p>
-            </div>
-            <div class="tarjeta-video">
+            </label>
+            <label class="tarjeta-video" for="btn-video-paleta" id="label-paleta">
                 <img src="./assets/images/dulceria/Polet.webp" alt="Polet">
                 <p>Paleta Helada de Chocolate</p>
-            </div>
+            </label>
             <div class="tarjeta-video reproducir-video">
                 <img src="./assets/images/dulceria/Iconovideo.png" alt="Reproducir video">
                 <p>Toca para reproducir el video</p>

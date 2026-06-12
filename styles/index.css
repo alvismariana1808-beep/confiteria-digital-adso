@@ -325,9 +325,15 @@ header {
     /*Establece una altura mínima para el elemento.*/
     height: auto;
     /*se ajusta automáticamente según el contenido o las proporciones del elemento.*/
-    display: block;
+    display: none;
     background-color: #000;
     border-radius: 24px;
+}
+
+#btn-video-bombones:checked ~ .video-container #video-bombones,
+#btn-video-gomitas:checked ~ .video-container #video-gomitas,
+#btn-video-paleta:checked ~ .video-container #video-paleta {
+    display: block;
 }
 
 .productos-videos {
@@ -341,7 +347,8 @@ header {
     gap: 20px;
 }
 
-.reproducir-video {
+/* PC y Tablets: Se visualizan solo 3 tarjetas (se oculta la última, que es la de reproducir video) */
+.tarjeta-video.reproducir-video {
      display: none;
 }
 
@@ -359,6 +366,7 @@ header {
     background-color: #ffffff;
     overflow: hidden;
     /*Oculta cualquier contenido que sobresalga de los bordes de la tarjeta.*/
+    cursor: pointer;
 }
 
 .tarjeta-video img {
@@ -387,6 +395,12 @@ header {
 .activo {
     border: 12px solid #FE6008;
     border-radius: 24px;
+}
+
+#btn-video-bombones:checked ~ .productos-videos #label-bombones,
+#btn-video-gomitas:checked ~ .productos-videos #label-gomitas,
+#btn-video-paleta:checked ~ .productos-videos #label-paleta {
+    border: 12px solid #FE6008;
 }
 
 .imagenes {
@@ -714,134 +728,6 @@ header {
 
     /* HEADER */
     header {
-        flex-direction: column;
-        align-items: center;
-        padding: 15px;
-        gap: 15px;
-    }
-
-    /* Logo más visible */
-    .logo {
-        width: 320px;
-        max-width: 90%;
-    }
-
-    .logo img {
-        width: 100%;
-        height: auto;
-    }
-
-    /* Menú más discreto */
-    .nav-links {
-        flex-wrap: nowrap;
-        justify-content: center;
-        gap: 12px;
-        height: auto;
-    }
-
-    .nav-links li a {
-        font-size: 14px;
-    }
-
-    .nav-item img {
-        width: 24px;
-        height: 24px;
-    }
-
-    /* BOTONES DULCERÍA Y REGALOS */
-    .btn-categoria {
-        font-size: 22px;
-        padding: 15px 0;
-    }
-
-    /* BANNER */
-    .banner-fondo {
-        padding: 20px 10px 0;
-    }
-
-    .slides img {
-        height: 170px;
-    }
-
-    /* OPCIONES */
-    .opciones {
-        flex-direction: column;
-        gap: 0;
-
-    }
-
-    .btn-opciones {
-        width: 100%;
-        padding: 10px;
-        font-size: 14px;
-    }
-
-    /* PRODUCTOS */
-    .productos {
-        grid-template-columns: 1fr;
-        margin: 20px;
-        gap: 20px;
-    }
-
-    .info-producto h3 {
-        font-size: 16px;
-    }
-
-    .precio {
-        font-size: 14px;
-        padding: 6px 12px;
-    }
-
-    .btn-productos {
-        font-size: 18px;
-    }
-
-    /* VIDEO */
-    .vidoPromocional {
-        margin: 20px;
-    }
-
-    .vidoPromocional video {
-        width: 100%;
-    }
-
-    .productos-videos {
-        flex-direction: column;
-    }
-
-    /* IMÁGENES */
-    .imagenes {
-        margin: 20px;
-        gap: 20px;
-    }
-
-    /* FOOTER */
-    .fondo {
-        flex-direction: column;
-        text-align: center;
-        padding: 25px 15px;
-    }
-
-    .separador,
-    .fondo hr {
-        display: none;
-    }
-
-    .Redes-sociales {
-        font-size: 20px;
-    }
-
-    .Redes-sociales h2,
-    .informacion h2 {
-        font-size: 22px;
-    }
-
-}
-
-@media (max-width: 767px) {
-
-    /* HEADER */
-    header {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -945,7 +831,8 @@ header {
         gap: 15px;
     }
 
-    .reproducir-video {
+    /* Adaptación móvil: Se visualizan perfectamente las 4 tarjetas */
+    .tarjeta-video.reproducir-video {
         display: flex;
     }
 
