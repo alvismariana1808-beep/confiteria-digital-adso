@@ -1,13 +1,15 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+
     font-family: 'karla', sans-serif;
 }
 
 body {
     font-weight: 400;
 }
+
+
 
 header {
     display: flex;
@@ -17,8 +19,8 @@ header {
 }
 
 .logo {
-    width: 120px;
-    height: 70px;
+    width: 180px;
+    height: 98px;
 }
 
 .logo img {
@@ -82,39 +84,37 @@ header {
 }
 
 .dulceria {
-    background-color: #5FA101;
-    font-size: 32px;
+    background-color: #93DA00;
+    font-size: 36px;
 
 }
 
 .regalos {
-    background-color: #93DA00;
+    background-color: #5FA101;
     font-family: 'karla', sans-serif, bold;
-    font-size: 32px;
+    font-size: 36px;
+}
+
+.quienes-somos img,
+.contenido img,
+.historia img,
+.mision img,
+.vision img,
+.mapa img {
+    display: block;
 }
 
 .quienes-somos img {
 
     width: 100%;
-    height: 770px;
+    height: 800px;
 }
 
-.historia {
-    
-}
-
-.historia p{
-    font-size: 48px;
-    color: #5FA101;
-    font-weight: 400;
-    margin: 20px;
-    align-items: center;
-}
-
-.contenido img{
+.contenido img {
     width: 100%;
-    height: 750px;
+    height: 800px;
     margin-top: 0px;
+    margin: 0%;
 }
 
 .historia img {
@@ -133,4 +133,313 @@ header {
     width: 100%;
     height: 750px;
     margin-top: 0px;
+}
+
+.mapa img {
+
+    width: 100%;
+    height: 750px;
+    margin: 0px;
+}
+
+
+.fondo {
+    width: 100%;
+    height: 200px;
+    background-color: #272925;
+
+    display: flex;
+    justify-content: space-around;
+    /*distribuir los elementos horizontalmente con espacio entre ellos.*/
+    align-items: center;
+
+}
+
+.pie-de-pagina {
+
+    width: 203px;
+    height: 115px;
+}
+
+.pie-de-pagina img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /*se ajustacompletamente dentro de su contenedor sin recortarse ni deformarse.*/
+}
+
+
+.fondo hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #A6A7A4;
+    transform: rotate(90deg);
+    /*Sirve para rotar un elemento 90 grados.*/
+    width: 114px;
+
+}
+
+.separador {
+    width: 1px;
+    height: 120px;
+    background-color: #A6A7A4;
+}
+
+.informacion {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /*Los elementos quedan uno debajo del otro.*/
+    gap: 10px;
+    color: #fff
+}
+
+.informacion h2 {
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.informacion p {
+    font-size: 19px;
+}
+
+.ubicación p {
+    display: flex;
+    flex-direction: row;
+    /*Los elementos quedan uno al lado del otro.*/
+    color: #fff;
+    gap: 8px;
+}
+
+.ubicación p img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    /*agrega un margen a la derecha separando el icono del texto*/
+
+}
+
+.Redes-sociales {
+    display: flex;
+    justify-content: center;
+    /*Centra los elementos horizontalmente dentro del contenedor.*/
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+    color: #fff;
+    font-size: 32px;
+}
+
+.Redes-sociales h2 {
+    font-size: 30px;
+    font-weight: normal;
+    /*Peso de la fuente, desde la normal hasta la más negrita.*/
+}
+
+.iconos {
+    display: flex;
+    flex-direction: row;
+    /*Los elementos quedan uno al lado del otro.*/
+    align-items: center;
+    /*Alinea los elementos verticalmente dentro del contenedor.*/
+    justify-content: center;
+    /*Centra los elementos horizontalmente dentro del contenedor.*/
+    gap: 12px;
+}
+
+.iconos img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    /*se ajusta completamente dentro de su contenedor sin recortarse ni deformarse.*/
+
+}
+
+/* ==========================
+   TABLET (iPad)
+========================== */
+@media (max-width: 1024px) {
+
+    header {
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .logo {
+        width: 150px;
+        height: auto;
+    }
+
+    .nav-links {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+    }
+
+    .nav-item img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .nav-links li a {
+        font-size: 18px;
+    }
+
+    .btn-categoria,
+    .dulceria,
+    .regalos {
+        font-size: 28px;
+    }
+
+    .quienes-somos img,
+    .contenido img,
+    .historia img,
+    .mision img,
+    .vision img,
+    .mapa img {
+        height: auto;
+    }
+
+    .fondo {
+        width: 100%;
+        min-height: 200px;
+        background-color: #272925;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .pie-de-pagina {
+        width: 180px;
+        height: 100px;
+        flex-shrink: 0;
+    }
+
+    .informacion h2,
+    .Redes-sociales h2 {
+        font-size: 24px;
+    }
+
+    .informacion p,
+    .ubicación p {
+        font-size: 16px;
+    }
+
+    .iconos img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .separador {
+        height: 90px;
+    }
+
+    .fondo hr {
+        width: 90px;
+    }
+}
+
+/* ==========================
+   CELULAR
+========================== */
+@media (max-width: 767px) {
+
+    /* HEADER */
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 15px;
+        gap: 25px;
+    }
+
+    /* Logo más grande y centrado */
+    .logo {
+        width: 220px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .logo img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    /* Menú */
+    .nav-links {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: nowrap;
+        height: auto;
+        margin: 0;
+    }
+
+    .nav-item img {
+        width: 26px;
+        height: 26px;
+    }
+
+    .nav-links li a {
+        font-size: 14px;
+    }
+
+
+    /* BOTONES DULCERÍA Y REGALOS */
+    .btn-categoria {
+        font-size: 22px;
+        padding: 15px 0;
+    }
+
+    .quienes-somos img,
+    .contenido img,
+    .historia img,
+    .mision img,
+    .vision img,
+    .mapa img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* FOOTER */
+    .fondo {
+        flex-direction: column;
+        text-align: center;
+
+        height: auto;
+        min-height: auto;
+
+        padding: 20px 0;
+        gap: 20px;
+    }
+
+    .separador,
+    .fondo hr {
+        display: none;
+    }
+
+    .Redes-sociales {
+        font-size: 20px;
+        gap: 15px;
+    }
+
+    .Redes-sociales h2,
+    .informacion h2 {
+        font-size: 18px;
+    }
+
+    .informacion p,
+    .ubicación p {
+        font-size: 16px;
+    }
+
+    .iconos {
+        flex-wrap: wrap;
+    }
+
 }

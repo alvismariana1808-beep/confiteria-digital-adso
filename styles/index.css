@@ -70,7 +70,7 @@ header {
     align-items: center;
     gap: 5px;
     text-decoration: none;
-    /*Quita subrayado*/
+   
 }
 
 .nav-item img {
@@ -472,7 +472,7 @@ header {
 .fondo {
     width: 100%;
     height: 200px;
-    background-color: #343434;
+    background-color: #272925;
     margin-top: 40px;
     display: flex;
     justify-content: space-around;
@@ -654,31 +654,20 @@ header {
         flex-wrap: wrap;
     }
 
-    /* IMÁGENES */
-    .imagenes {
-        flex-direction: column;
-        height: auto;
-        gap: 30px;
-        margin: 30px;
+     /* OPCIONES */
+    .opciones {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        gap: 10px;
     }
 
-    .imagenes-izquierda,
-    .imagenes-derecha {
-        width: 100%;
+    .btn-opciones {
+        flex: 1;
+        font-size: 18px;
+        padding: 15px 10px;
+        text-align: center;
     }
-
-    .tarjeta-preferencial,
-    .tarjeta-mispedidos,
-    .tarjeta-quienes-somos {
-        width: 100%;
-        height: auto;
-    }
-
-    .tarjeta-quienes-somos img,
-    .imagenes-izquierda img {
-        height: auto;
-    }
-
 
     .fondo {
         display: flex;
