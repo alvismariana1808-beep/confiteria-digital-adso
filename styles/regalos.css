@@ -431,62 +431,62 @@ header {
     /*horizontalmente el elemento si tiene un ancho menor que su contenedor.*/
 }
 
-.vidoPromocional{
-    display:flex;
-    gap:20px;
-    align-items:stretch;
-    margin:50px;
+.vidoPromocional {
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+    margin: 50px;
 }
 
-.video-container{
-    flex:1;
+.video-container {
+    flex: 1;
 }
 
-.video-container video{
-    width:100%;
-    height:100%;
-    border-radius:20px;
-    display:block;
+.video-container video {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    display: block;
 }
 
-.videos-secundarios{
-    width:320px;
-    display:flex;
-    gap:15px;
+.videos-secundarios {
+    width: 320px;
+    display: flex;
+    gap: 15px;
 }
 
-.columna{
-    flex:1;
-    display:flex;
-    flex-direction:column;
-    gap:15px;
+.columna {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
-.tarjeta{
-    flex:1;
-    overflow:hidden;
-    border-radius:15px;
+.tarjeta {
+    flex: 1;
+    overflow: hidden;
+    border-radius: 15px;
 
-    border:3px solid #70A327;
-    background-color:#f5ffe8;
+    border: 3px solid #70A327;
+    background-color: #f5ffe8;
 
-    padding:15px;
+    padding: 15px;
 
-    transition:.3s ease;
+    transition: .3s ease;
 }
 
-.tarjeta:hover{
-    border-color:#DB971A;
-    background-color:#fff8e8;
-    transform:scale(1.03);
+.tarjeta:hover {
+    border-color: #DB971A;
+    background-color: #fff8e8;
+    transform: scale(1.03);
 }
 
-.tarjeta img{
-    width:100%;
-    height:100%;
-    object-fit:contain;
-    border-radius:10px;
-    display:block;
+.tarjeta img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+    display: block;
 }
 
 .imagenes {
@@ -669,7 +669,7 @@ header {
 
 @media (max-width: 1024px) {
 
-     /* HEADER */
+    /* HEADER */
     header {
         flex-direction: column;
         gap: 15px;
@@ -699,12 +699,12 @@ header {
         font-size: 16px;
     }
 
-    /* BANNER */
     .slides img {
-        height: 280px;
+        height: 350px;
+        object-fit: cover;
     }
 
-      /* OPCIONES */
+    /* OPCIONES */
     .opciones {
         display: flex;
         flex-wrap: nowrap;
@@ -720,70 +720,248 @@ header {
     }
 
     /* Ranking */
-    .producto{
-        width:280px;
-        height:340px;
+    .producto {
+        width: 280px;
+        height: 340px;
     }
 
-    .producto-img{
-        width:180px;
+    .producto-img {
+        width: 180px;
     }
 
     /* Productos */
-    .productos{
+    .productos {
         grid-template-columns: repeat(2, 1fr);
-        margin:30px;
+        margin: 30px;
     }
 
-    .vidoPromocional{
+    .vidoPromocional {
         flex-direction: column;
     }
 
-    .videos-secundarios{
+    .videos-secundarios {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
         gap: 15px;
     }
 
-    .columna{
+    .columna {
         display: contents;
     }
 
-    .tarjeta{
+    .tarjeta {
         width: calc((100% - 30px) / 3);
         aspect-ratio: 1 / 1;
     }
 
     /* Sección de imágenes */
-    .imagenes{
-        flex-direction:column;
-        height:auto;
-        gap:30px;
-        padding:30px;
+    .imagenes {
+        flex-direction: column;
+        height: auto;
+        gap: 30px;
+        padding: 30px;
     }
 
     .tarjeta-preferencial,
     .tarjeta-mispedidos,
-    .tarjeta-quienes-somos{
-        width:100%;
-        max-width:950px;
-        height:auto;
+    .tarjeta-quienes-somos {
+        width: 100%;
+        max-width: 950px;
+        height: auto;
     }
 
     /* Footer */
-    .fondo{
-        flex-wrap:wrap;
-        height:auto;
-        gap:30px;
-        padding:30px;
+    .fondo {
+        flex-wrap: wrap;
+        height: auto;
+        gap: 30px;
+        padding: 30px;
     }
 
-    .separador{
-        display:none;
+    .separador {
+        display: none;
     }
 }
 
+@media (max-width: 767px) {
 
+    /* HEADER */
+    header {
+        flex-direction: column;
+        padding: 15px;
+        gap: 15px;
+    }
 
+    .logo {
+        width: 140px;
+        height: auto;
+    }
 
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+    }
+
+    .nav-links li a {
+        font-size: 14px;
+    }
+
+    .nav-item img {
+        width: 28px;
+        height: 28px;
+    }
+
+    /* CATEGORÍAS */
+    .btn-categoria {
+        font-size: 20px;
+        padding: 12px 0;
+    }
+
+    .dulceria,
+    .regalos {
+        font-size: 20px;
+    }
+
+    /* BANNER */
+    .banner-fondo {
+        padding: 20px 5px 0;
+    }
+
+    .slides img {
+        height: 180px;
+        object-fit: contain;
+    }
+
+    /* OPCIONES */
+    .opciones {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .btn-opciones {
+        width: 100%;
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    /* RANKING */
+    .ranking p {
+        font-size: 30px;
+    }
+
+    .ranking-productos {
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 40px;
+    }
+
+    .puesto1,
+    .puesto2,
+    .puesto3 {
+        margin: 0;
+        transform: none;
+    }
+
+    .producto {
+        width: 280px;
+        height: 320px;
+    }
+
+    .producto-img {
+        width: 180px;
+    }
+
+    /* PRODUCTOS */
+    .productos {
+        grid-template-columns: 1fr;
+        margin: 20px;
+    }
+
+    .fondo-pro p {
+        font-size: 28px;
+    }
+
+    /* VIDEO */
+    .vidoPromocional {
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .video-container video {
+        width: 100%;
+        height: 200px;
+    }
+
+    .videos-secundarios {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .columna {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 40%;
+    }
+
+    .tarjeta {
+        width: 100%;
+        height: 100px;
+    }
+
+    /* PREFERENCIAL - PEDIDOS - QUIÉNES SOMOS */
+    .imagenes {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .imagenes-izquierda,
+    .imagenes-derecha {
+        width: 100%;
+    }
+
+    .tarjeta-preferencial,
+    .tarjeta-mispedidos,
+    .tarjeta-quienes-somos {
+        width: 100%;
+        height: auto;
+    }
+
+    .tarjeta-preferencial img,
+    .tarjeta-mispedidos img,
+    .tarjeta-quienes-somos img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    /* FOOTER */
+    .fondo {
+        flex-direction: column;
+        text-align: center;
+        padding: 25px 15px;
+    }
+
+    .separador,
+    .fondo hr {
+        display: none;
+    }
+
+    .Redes-sociales {
+        font-size: 20px;
+    }
+
+    .Redes-sociales h2,
+    .informacion h2 {
+        font-size: 22px;
+
+    }
+
+}

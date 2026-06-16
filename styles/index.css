@@ -613,9 +613,9 @@ header {
         font-size: 16px;
     }
 
-    /* BANNER */
-    .slides img {
-        height: 280px;
+    .slides img{
+        height: 350px;
+        object-fit: cover;
     }
 
     /* OPCIONES */
@@ -668,6 +668,23 @@ header {
         padding: 15px 10px;
         text-align: center;
     }
+       .imagenes{
+        gap: 30px;
+        height: auto;
+        padding: 30px 20px;
+    }
+
+    .tarjeta-preferencial,
+    .tarjeta-mispedidos{
+        width: 580px;
+        height: 290px;
+    }
+
+    .tarjeta-quienes-somos{
+        width: 350px;
+        height: 600px;
+    }
+
 
     .fondo {
         display: flex;
@@ -837,13 +854,32 @@ header {
         margin-top: 20px;
     }
 
-    /* IMÁGENES */
-    .imagenes {
-        margin: 20px;
+       .imagenes{
+        flex-direction: column;
+        height: auto;
         gap: 20px;
-        
+        padding: 20px;
     }
 
+    .imagenes-izquierda,
+    .imagenes-derecha{
+        width: 100%;
+    }
+
+    .tarjeta-preferencial,
+    .tarjeta-mispedidos,
+    .tarjeta-quienes-somos{
+        width: 100%;
+        height: auto;
+    }
+
+    .tarjeta-preferencial img,
+    .tarjeta-mispedidos img,
+    .tarjeta-quienes-somos img{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
     /* FOOTER */
     .fondo {
         flex-direction: column;

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Hace que la pagina se adapte a cualquier disposivo movil-->
+    <title> Confitería Digital ADSO </title>
+    <link rel="stylesheet" href="../styles/registro.css">
+
+</head>
+<!-- ENCABEZADO -->
+
+<body>
+    <header>
+
+        <div class="logo">
+            <img src="../assets/images/dulceria/Logo1.png" alt="Logo de la confitería digital">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li class="nav-item active">
+                    <a href="#">
+                        <img src="../assets/images/dulceria/persona.svg" alt="Mi cuenta">
+                        Mi cuenta
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">
+                        <img src="../assets/images/dulceria/registro.svg" alt="Registro">
+                        Registro
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="../pages/carrito.html">
+                        <img src="../assets/images/dulceria/carro.svg" alt="Comprar">
+                        Comprar
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- BOTONES DE DULCERIA Y REGALOS -->
+    <section class="categorias">
+        <a href="../index.html" class="btn-categoria dulceria">Dulcería</a>
+        <a href="../pages/regalos.html" class="btn-categoria regalos">Regalos</a>
+    </section>
+    <section class="registro-container">
+
+        <div class="lado-izquierdo">
+
+            <img src="../assets/images/registro/collage.png" alt="Collage">
+
+
+
+        </div>
+
+        <div class="lado-derecho">
+
+            <h1>Registro</h1>
+
+            <form>
+                <input type="email" placeholder="Email :">
+                <input type="text" placeholder="Nombre:">
+                <input type="tel" placeholder="Teléfono:">
+                <input type="password" placeholder="Contraseña:">
+
+                <div class="terminos">
+                    <input type="checkbox" id="terminos">
+                    <label for="terminos">
+                        Acepta términos y condiciones
+                    </label>
+                </div>
+
+                <button type="submit">
+                    Continuar
+                </button>
+            </form>
+
+            <p class="login">
+                Ya tienes una cuenta? <a href="../pages/iniciosesion.html">Inicia Sesión</a>
+            </p>
+
+        </div>
+    </section>
+
+</body>
+</html>

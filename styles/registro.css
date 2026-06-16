@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'karla', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    min-height: auto;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.logo {
+    width: 180px;
+    height: 98px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav-links {
+    display: flex;
+    gap: 45px;
+    list-style: none;
+    align-items: center;
+    margin: 0 10px;
+    padding: 0;
+    height: 80px;
+}
+
+.nav-links li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    height: 100%;
+}
+
+.nav-item a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+}
+
+.nav-item img {
+    width: 44px;
+    height: 44px;
+}
+
+.nav-links li a {
+    font-size: 20px;
+    color: #5FA101;
+    font-weight: 400;
+    margin: 0;
+}
+
+.categorias {
+    display: flex;
+    width: 100%;
+}
+
+.btn-categoria {
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 20px 0;
+
+}
+
+.dulceria {
+    background-color: #93DA00;
+    font-size: 36px;
+
+}
+
+.regalos {
+    background-color: #5FA101;
+    font-family: 'karla', sans-serif, bold;
+    font-size: 36px;
+}
+
+.registro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.lado-izquierdo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transform: translate(-50px);
+}
+
+.lado-izquierdo img {
+    width: 700px;
+    height: auto;
+}
+
+
+.lado-derecho {
+    width: 500px;
+    padding: 40px;
+    background: #E3FFB0;
+    border-radius: 10px;
+    position: relative;
+    margin-top: 50px;
+    min-height: 650px;
+}
+
+.lado-derecho h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: #16211a;
+}
+
+.lado-derecho form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-right: 30px;
+}
+
+.lado-derecho input {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+}
+
+.terminos {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.terminos input[type="checkbox"] {
+    transform: scale(1.5);
+    margin-right: 8px;
+}
+
+.terminos input {
+    width: auto;
+    margin: 0;
+}
+
+.terminos label {
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+
+button {
+    background: #5fa101;
+    color: white;
+    border: none;
+    padding: 16px;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.login a {
+    color: #253729;
+    text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+
+    /* HEADER */
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    /* Logo más protagonista */
+    .logo {
+        width: 280px;
+        height: 140px;
+    }
+
+    /* Menú más compacto */
+    .nav-links {
+        gap: 25px;
+        height: auto;
+    }
+
+    /* Iconos un poco más pequeños */
+    .nav-item img {
+        width: 30px;
+        height: 30px;
+    }
+
+    /* Texto más discreto */
+    .nav-links li a {
+        font-size: 16px;
+    }
+
+
+    /* Categorías */
+    .btn-categoria {
+        font-size: 28px;
+        padding: 15px 0;
+    }
+
+    .dulceria,
+    .regalos {
+        font-size: 28px;
+    }
+
+    .lado-izquierdo {
+        display: none;
+    }
+
+    .registro-container {
+        justify-content: center;
+        align-items: center;
+        padding: 50px 30px;
+        gap: 30px;
+    }
+
+    .lado-derecho {
+        width: 700px;
+
+        min-height: 700px;
+        margin-top: 10px;
+        margin: 0;
+    }
+
+    .lado-derecho h1 {
+        font-size: 70px;
+    }
+
+    .lado-derecho input {
+        height: 50px;
+        font-size: 20px;
+    }
+
+    button {
+        height: 70px;
+        font-size: 28px;
+        position: relative;
+        top: -40px;
+    }
+
+    .login {
+        font-size: 20px;
+        position: relative;
+        top: -20px;
+    }
+
+    .terminos label {
+        font-size: 20px;
+        position: relative;
+
+    }
+
+    .terminos {
+        position: relative;
+        top: -35px;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    /* Header */
+    header {
+        flex-direction: column;
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .logo {
+        width: 180px;
+        height: auto;
+    }
+
+    .nav-links {
+        gap: 15px;
+        margin: 0;
+    }
+
+    .nav-item img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .nav-links li a {
+        font-size: 13px;
+    }
+
+    /* Categorías */
+    .btn-categoria {
+        font-size: 18px;
+        padding: 12px 0;
+    }
+
+    .dulceria,
+    .regalos {
+        font-size: 18px;
+    }
+
+    /* Ocultar collage */
+    .lado-izquierdo {
+        display: none;
+    }
+
+    /* Formulario */
+    .registro-container {
+        padding: 20px 10px;
+        gap: 0;
+    }
+
+    .lado-derecho {
+        width: 90%;
+        min-height: auto;
+        padding: 25px;
+        position: relative;
+        top:30px;
+    }
+
+    .lado-derecho h1 {
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+
+    .lado-derecho form {
+        gap: 30px;
+        margin-right: 0;
+    }
+
+    .lado-derecho input {
+        height: 30px;
+        font-size: 13px;
+        padding: 5px 8px;
+    }
+
+    .terminos {
+        position: relative;
+        top:-20px;
+        gap: 8px;
+    }
+
+    .terminos input[type="checkbox"] {
+        transform: scale(1.2);
+    }
+
+    .terminos label {
+        font-size: 14px;
+    }
+
+    button {
+        height: 50px;
+        font-size: 18px;
+       position: relative;
+       top:-30px;
+    }
+
+    .login {
+        font-size: 14px;
+        top: 0;
+       position: relative;
+       top:-30px;
+    }
+}
