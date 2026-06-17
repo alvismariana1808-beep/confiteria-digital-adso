@@ -100,7 +100,7 @@ header {
     padding: 40px 0;
     display: flex;
     align-items: center;
-   
+
 
 }
 
@@ -156,7 +156,7 @@ header {
     display: flex;
     align-items: center;
     gap: 20px;
-    
+
 }
 
 .numero {
@@ -176,7 +176,7 @@ header {
 .producto img {
     width: 150px;
     position: relative;
-    left:-15px;
+    left: -15px;
 }
 
 .info {
@@ -238,27 +238,29 @@ header {
     color: white;
     text-align: center;
     padding: 25px;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .fila {
     display: flex;
     justify-content: space-between;
-    padding: 30px;
+    margin: 45px;
     font-size: 30px;
 }
 
 .btn-finalizar {
     width: 80%;
+    height: 70px;
     display: block;
     margin: 20px auto 40px;
     background: #5FA101;
     color: white;
     border: none;
-    padding: 20px;
-    font-size: 32px;
+
+    font-size: 28px;
+    font-weight: 600;
     border-radius: 10px;
-    font-family: 'karla' bold;
+
 }
 
 /* SEGUIR COMPRANDO */
@@ -272,17 +274,186 @@ header {
 }
 
 .icono {
+    width: 320px;
+    height: 145px;
+    background-color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 30px auto;
+    border-radius: 4px;
+    /* esquinas redondeadas */
+}
+
+.icono img {
     text-align: center;
-    font-size: 120px;
     padding: 40px;
+    height: auto;
+    width: 170px;
+    font-weight: 800;
+
 }
 
 .seguir button {
     width: 100%;
+    height: 60px;
     background: #5FA101;
     color: white;
     border: none;
-    padding: 25px;
-    font-size: 35px;
+    font-size: 26px;
+    font-weight: 600;
+
+}
+
+.columna-productos {
+    display: flex;
+    flex-direction: column;
+}
+
+.productos-relacionados {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.mini-producto {
+    width: 160px;
+    height: 150px;
+    background: #fff;
+    border-radius: 8px;
+    position: relative;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mini-producto img {
+    width: 95px;
+    height: 98px;
+    position: relative;
+    top: -5px;
+    left: -14px;
+}
+
+.mini-producto .numero {
+    position: relative;
+    top: -50px;
+    left: -8px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.fondo {
+    width: 100%;
+    height: 200px;
+    background-color: #272925;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    /*distribuir los elementos horizontalmente con espacio entre ellos.*/
+    align-items: center;
+
+}
+
+.pie-de-pagina {
+
+    width: 203px;
+    height: 115px;
+}
+
+.pie-de-pagina img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /*se ajustacompletamente dentro de su contenedor sin recortarse ni deformarse.*/
+}
+
+.fondo hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #A6A7A4;
+    transform: rotate(90deg);
+    /*Sirve para rotar un elemento 90 grados.*/
+    width: 114px;
+
+}
+
+.separador {
+    width: 1px;
+    height: 120px;
+    background-color: #A6A7A4;
+}
+
+.informacion {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /*Los elementos quedan uno debajo del otro.*/
+    gap: 10px;
+    color: #fff
+}
+
+.informacion h2 {
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.informacion p {
+    font-size: 19px;
+}
+
+.ubicación p {
+    display: flex;
+    flex-direction: row;
+    /*Los elementos quedan uno al lado del otro.*/
+    color: #fff;
+    gap: 8px;
+}
+
+.ubicación p img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    /*agrega un margen a la derecha separando el icono del texto*/
+
+}
+
+.Redes-sociales {
+    display: flex;
+    justify-content: center;
+    /*Centra los elementos horizontalmente dentro del contenedor.*/
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+    color: #fff;
+    font-size: 32px;
+}
+
+.Redes-sociales h2 {
+    font-size: 30px;
+    font-weight: normal;
+    /*Peso de la fuente, desde la normal hasta la más negrita.*/
+}
+
+.iconos {
+    display: flex;
+    flex-direction: row;
+    /*Los elementos quedan uno al lado del otro.*/
+    align-items: center;
+    /*Alinea los elementos verticalmente dentro del contenedor.*/
+    justify-content: center;
+    /*Centra los elementos horizontalmente dentro del contenedor.*/
+    gap: 12px;
+}
+
+.iconos img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    /*se ajusta completamente dentro de su contenedor sin recortarse ni deformarse.*/
 
 }

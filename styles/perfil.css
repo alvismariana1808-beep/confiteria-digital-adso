@@ -1,71 +1,579 @@
-/* .fondo{
+* {
+    margin: 0;
+    /*Elimina todos los márgenes que estan agregados por defecto*/
+    padding: 0;
+    /*Elimina todos los espacios internos por defecto.*/
+    box-sizing: border-box;
+    /* Hace que el ancho y alto incluyan padding y borde.*/
+    font-family: 'karla', sans-serif;
+    /*define el tipo de letra*/
+    /*box-sizing: border-box;*/
+}
+
+body {
+    font-weight: 400;
+    /*Peso normal de la fuente desde la normal hasta la mas negrita*/
+}
+
+
+header {
+    display: flex;
+    /*Permite que el contenedor sea flexible*/
+    justify-content: space-between;
+    /*Separa los elementos al maximo*/
+    align-items: center;
+    /*Alinea los elementos verticalmente*/
+    padding: 15px 40px;
+    /*15px arriba y abajo, 40px izquierda y derecha*/
+}
+
+.logo {
+    width: 160px;
+    /*Define el tamaño fijo, ancho y altura*/
+    height: 80px;
+}
+
+.logo img {
+    width: 100%;
+    /*Permite que la imagen ocupe todo el espacio del contenedor*/
+    height: 100%;
+}
+
+.nav-links {
+    display: flex;
+    /*Los elementos quedan en fila.*/
+    gap: 45px;
+    /*Espacio entre los elementos*/
+    list-style: none;
+    /*Elimina los estilos por defecto de la lista*/
+    align-items: center;
+    /*Alinea los elementos verticalmente*/
+    margin: 0 10px;
+    /**/
+    padding: 0;
+    height: 80px;
+}
+
+.nav-links li {
+    display: flex;
+    /**/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    height: 100%;
+}
+
+.nav-item a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+
+}
+
+.nav-item img {
+    width: 44px;
+    /*Define el tamaño fijo, ancho y altura*/
+    height: 44px;
+}
+
+.nav-links li a {
+    font-size: 20px;
+    /*Tamaño de la fuente*/
+    color: #5FA101;
+    font-weight: 400;
+    /*Peso de la fuente, desde la normal hasta la más negrita*/
+    margin: 0;
+}
+
+
+body {
+    margin: 0;
+    background: #f3f3f3;
+    font-family: 'karla', sans-serif;
+}
+
+.perfil {
+    width: 100%;
+    margin: auto;
+}
+
+.perfil h1 {
+    background: #FF7C33;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin: 0 0 30px 0;
+    font-size: 40px;
+}
+
+.usuario {
+    background: #efe4d8;
+    border-radius: 15px;
+    padding: 25px;
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 261px;
+    margin-bottom: 30px;
+}
+
+.usuario img {
+    width: 210px;
+    height: 234px;
+    position: relative;
+    right: -40px;
+}
+
+.info-usuario h2 {
+    color: #FF7C33;
+    font-size: 40px;
+    margin-bottom: 20px;
+    position: relative;
+    left: -260px;
+}
+
+.info-usuario p {
+    margin: 0;
+    position: relative;
+    left: -260px;
+    font-size: 25px;
+}
+
+.usuario button {
+    background: #FFF2E7;
+    border: 2px solid #DB971A;
+    color: #FF7C33;
+    border-radius: 12px;
+    height: 40px;
+    width: 160px;
+    font-size: 20px;
+    font-weight: 550;
+
+    position: relative;
+    left: -40px;
+    top: 60px
+}
+
+.opcion {
+    background: #f5f5f5;
+    border: 1px solid #ffb07c;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 15px 20px;
+    margin: 40px 50px 30px 50px;
+}
+
+
+.izquierda {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    height: 80px;
+}
+
+.izquierda img {
+    width: 70px;
+    height: 70px;
+
+    background-color: #F4E9DD;
+    border: 1px solid #D9A56A;
+    border-radius: 4px;
+
+    padding: 10px;
+
+    position: relative;
+    left: 20px;
+}
+
+.izquierda h3 {
+    color: #FF7C33;
+    margin: 0;
+    font-size: 20px;
+    position: relative;
+    right: -50px;
+}
+
+.izquierda p {
+    margin: 5px 0 0;
+    font-size: 16px;
+    position: relative;
+    right: -50px;
+}
+
+.opcion button {
+    font-size: 20px;
+    background: white;
+    border: 1px solid #ffb07c;
+    color: #FF7C33;
+    border-radius: 15px;
+    position: relative;
+    right: 20px;
+    height: 40px;
+    width: 10%;
+
+}
+
+.flecha {
+    color: #FF7C33;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.fondo {
     width: 100%;
     height: 200px;
-    background-color: #343434;
+    background-color: #272925;
     margin-top: 40px;
     display: flex;
     justify-content: space-around;
+    /*distribuir los elementos horizontalmente con espacio entre ellos.*/
     align-items: center;
-    padding: 0 50px;
+
 }
 
- Logo 
-.pie-de-pagina{
+.pie-de-pagina {
+
     width: 203px;
     height: 115px;
 }
 
-.pie-de-pagina img{
+.pie-de-pagina img {
     width: 100%;
     height: 100%;
     object-fit: contain;
+    /*se ajustacompletamente dentro de su contenedor sin recortarse ni deformarse.*/
 }
 
-Línea vertical 
-.separador{
+.fondo hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #A6A7A4;
+    transform: rotate(90deg);
+    /*Sirve para rotar un elemento 90 grados.*/
+    width: 114px;
+
+}
+
+.separador {
     width: 1px;
     height: 120px;
     background-color: #A6A7A4;
 }
 
-Información 
-.informacion{
+.informacion {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    color: white;
+    flex-direction: column;
+    /*Los elementos quedan uno debajo del otro.*/
     gap: 10px;
+    color: #fff
 }
 
-.informacion h2{
+.informacion h2 {
     font-size: 30px;
     font-weight: normal;
 }
 
-.informacion p{
-    font-size: 18px;
+.informacion p {
+    font-size: 19px;
 }
 
-/* Redes 
-.Redes-sociales{
+.ubicación p {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    /*Los elementos quedan uno al lado del otro.*/
+    color: #fff;
+    gap: 8px;
+}
+
+.ubicación p img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    /*agrega un margen a la derecha separando el icono del texto*/
+
+}
+
+.Redes-sociales {
+    display: flex;
+    justify-content: center;
+    /*Centra los elementos horizontalmente dentro del contenedor.*/
     align-items: center;
-    gap: 20px;
-    color: white;
+    gap: 30px;
+    flex-direction: column;
+    color: #fff;
+    font-size: 32px;
 }
 
-.Redes-sociales h2{
+.Redes-sociales h2 {
     font-size: 30px;
     font-weight: normal;
+    /*Peso de la fuente, desde la normal hasta la más negrita.*/
 }
 
-.iconos-redes{
+.iconos {
     display: flex;
-    gap: 15px;
+    flex-direction: row;
+    /*Los elementos quedan uno al lado del otro.*/
+    align-items: center;
+    /*Alinea los elementos verticalmente dentro del contenedor.*/
+    justify-content: center;
+    /*Centra los elementos horizontalmente dentro del contenedor.*/
+    gap: 12px;
 }
 
-.iconos-redes img{
+.iconos img {
     width: 40px;
     height: 40px;
-}*/
+    object-fit: contain;
+    /*se ajusta completamente dentro de su contenedor sin recortarse ni deformarse.*/
+
+}
+
+/* iPad */
+@media (max-width: 1024px) {
+
+    /* HEADER */
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    /* Logo más protagonista */
+    .logo {
+        width: 280px;
+        height: 140px;
+    }
+
+    /* Menú más compacto */
+    .nav-links {
+        gap: 25px;
+        height: auto;
+    }
+
+    /* Iconos un poco más pequeños */
+    .nav-item img {
+        width: 30px;
+        height: 30px;
+    }
+
+    /* Texto más discreto */
+    .nav-links li a {
+        font-size: 16px;
+    }
+
+    /* Usuario */
+    .usuario {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .info-usuario h2,
+    .info-usuario p {
+        position: static;
+        left: 0;
+    }
+
+    .usuario img {
+        right: 0;
+        width: 160px;
+        height: auto;
+    }
+
+    .usuario img {
+        right: -40px;
+    }
+
+    .usuario button {
+        left: -40px;
+        top: 60px;
+    }
+
+    /* Opciones */
+    .opcion {
+        margin: 25px 30px;
+    }
+
+    .izquierda img {
+        left: 0;
+    }
+
+    .izquierda h3,
+    .izquierda p {
+        right: 0;
+    }
+
+    .opcion button {
+        width: 120px;
+        right: 0;
+    }
+
+    /* Footer */
+    .fondo {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .informacion h2,
+    .Redes-sociales h2 {
+        font-size: 24px;
+    }
+
+    .informacion p {
+        font-size: 16px;
+    }
+
+    .iconos img {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* HEADER */
+
+    header {
+        flex-direction: column;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .logo {
+        width: 140px;
+        height: auto;
+    }
+
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+    }
+
+    .nav-links li a {
+        font-size: 14px;
+    }
+
+    .nav-item img {
+        width: 28px;
+        height: 28px;
+    }
+
+    /* TITULO */
+    .perfil h1 {
+        font-size: 28px;
+    }
+
+    /* USUARIO */
+    .usuario {
+        flex-direction: column;
+        height: auto;
+        margin: 20px;
+        padding: 20px;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .usuario img {
+        width: 140px;
+        height: auto;
+        position: static;
+    }
+
+    .info-usuario h2 {
+        position: static;
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .info-usuario p {
+        position: static;
+        font-size: 18px;
+    }
+
+    .usuario button {
+        position: static;
+        width: 100%;
+        max-width: 220px;
+        font-size: 18px;
+    }
+
+    /* OPCIONES */
+    .opcion {
+        margin: 12px;
+        padding: 15px;
+    }
+
+    .izquierda {
+        gap: 10px;
+        height: auto;
+    }
+
+    .izquierda img {
+        width: 55px;
+        height: 55px;
+        left: 0;
+    }
+
+    .izquierda h3 {
+        right: 0;
+        font-size: 16px;
+    }
+
+    .izquierda p {
+        right: 0;
+        font-size: 13px;
+    }
+
+    .opcion button {
+        width: 55px;
+        min-width: 55px;
+        margin-right: 8px;
+        font-size: 11px;
+       
+        right: 0;
+    }
+
+    .fondo {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 25px;
+    }
+
+    .separador,
+    .fondo hr {
+        display: none;
+    }
+
+    .informacion,
+    .Redes-sociales {
+        text-align: center;
+    }
+
+    .informacion h2,
+    .Redes-sociales h2 {
+        font-size: 18px;
+    }
+
+    .informacion p {
+        font-size: 14px;
+    }
+
+    .iconos {
+        flex-wrap: wrap;
+    }
+}

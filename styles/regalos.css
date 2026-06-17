@@ -1,43 +1,62 @@
 * {
     margin: 0;
-
+    /*Elimina todos los márgenes que estan agregados por defecto*/
+    padding: 0;
+    /*Elimina todos los espacios internos por defecto.*/
     box-sizing: border-box;
+    /* Hace que el ancho y alto incluyan padding y borde.*/
     font-family: 'karla', sans-serif;
+    /*define el tipo de letra*/
+    /*box-sizing: border-box;
 }
 
 body {
     font-weight: 400;
+    /*Peso normal de la fuente desde la normal hasta la mas negrita*/
 }
+
 
 header {
     display: flex;
+    /*Permite que el contenedor sea flexible*/
     justify-content: space-between;
+    /*Separa los elementos al maximo*/
     align-items: center;
+    /*Alinea los elementos verticalmente*/
     padding: 15px 40px;
+    /*15px arriba y abajo, 40px izquierda y derecha*/
 }
 
 .logo {
     width: 160px;
+    /*Define el tamaño fijo, ancho y altura*/
     height: 80px;
 }
 
 .logo img {
     width: 100%;
+    /*Permite que la imagen ocupe todo el espacio del contenedor*/
     height: 100%;
 }
 
 .nav-links {
     display: flex;
+    /*Los elementos quedan en fila.*/
     gap: 45px;
+    /*Espacio entre los elementos*/
     list-style: none;
+    /*Elimina los estilos por defecto de la lista*/
     align-items: center;
+    /*Alinea los elementos verticalmente*/
     margin: 0 10px;
+    /**/
     padding: 0;
     height: 80px;
 }
 
 .nav-links li {
     display: flex;
+    /**/
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -51,32 +70,42 @@ header {
     align-items: center;
     gap: 5px;
     text-decoration: none;
+   
 }
 
 .nav-item img {
     width: 44px;
+    /*Define el tamaño fijo, ancho y altura*/
     height: 44px;
 }
 
 .nav-links li a {
     font-size: 20px;
+    /*Tamaño de la fuente*/
     color: #5FA101;
     font-weight: 400;
+    /*Peso de la fuente, desde la normal hasta la más negrita*/
     margin: 0;
 }
 
 .categorias {
     display: flex;
+    /*Permite que el contenedor sea flexible*/
     width: 100%;
+    /*Hace que el contenedor ocupe todo el ancho disponible*/
 }
 
 .btn-categoria {
     flex: 1;
+    /*Hace que cada botón ocupe el mismo espacio.*/
     text-align: center;
+    /*Centra el texto dentro del botón*/
     text-decoration: none;
+    /*Quita subrayado*/
     color: #fff;
     font-size: 40px;
     font-weight: bold;
+    /*Peso de la fuente, desde la normal hasta la más negrita*/
     padding: 20px 0;
 
 }
@@ -86,10 +115,10 @@ header {
     font-size: 32px;
 
 }
-
 .regalos {
     background-color: #5FA101;
     font-family: 'karla', sans-serif, bold;
+    /*Define la familia de fuentes y el grosor*/
     font-size: 32px;
 }
 
@@ -114,7 +143,7 @@ header {
 
 .slides img {
     width: calc(100% / 3);
-    height: 600px;
+    height: 580px;
     object-fit: cover;
 }
 
@@ -138,22 +167,6 @@ header {
     100% {
         transform: translateX(0%);
     }
-}
-
-
-.banner-fondo {
-    width: 100%;
-    background-color: #343434;
-    margin: 0;
-    padding: 80px 10px 0px 10px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.banner-fondo img {
-    width: 100%;
-    height: 600px;
 }
 
 .opciones {
