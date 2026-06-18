@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Hace que la pagina se adapte a cualquier disposivo movil-->
+    <title> Confitería Digital ADSO </title>
+    <link rel="stylesheet" href="../styles/iniciosesion.css">
+
+</head>
+<!-- ENCABEZADO -->
+
+<body>
+    <header>
+
+        <div class="logo">
+            <img src="../assets/images/dulceria/Logo1.png" alt="Logo de la confitería digital">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li class="nav-item active">
+                    <a href="../pages/perfil.html">
+                        <img src="../assets/images/dulceria/persona.svg" alt="Mi cuenta">
+                        Mi cuenta
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">
+                        <img src="../assets/images/dulceria/registro.svg" alt="Registro">
+                        Registro
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="../pages/carrito.html">
+                        <img src="../assets/images/dulceria/carro.svg" alt="Comprar">
+                        Comprar
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- BOTONES DE DULCERIA Y REGALOS -->
+    <section class="categorias">
+        <a href="../index.html" class="btn-categoria dulceria">Dulcería</a>
+        <a href="../pages/regalos.html" class="btn-categoria regalos">Regalos</a>
+    </section>
+    <section class="registro-container">
+
+        <div class="lado-izquierdo">
+
+            <img src="../assets/images/registro/collage.png" alt="Collage">
+
+        </div>
+
+        <div class="contenedor-formulario">
+            <h1>Inicia sesión</h1>
+
+            <form>
+                <label for="usuario">Usuario:</label>
+                <input type="text" id="usuario">
+
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena">
+
+                <a href="#" class="olvido-contrasena">
+                    ¿Olvidaste tu contraseña?
+                </a>
+
+                <button type="submit">
+                    Iniciar Sesión
+                </button>
+
+                <p>
+                    No tienes una cuenta?
+                    <a href="../pages/registro.html">regístrate</a>
+                </p>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
