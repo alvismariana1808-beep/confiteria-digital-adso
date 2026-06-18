@@ -12,8 +12,6 @@ body {
     min-height: auto;
 }
 
-
-
 header {
     display: flex;
     justify-content: space-between;
@@ -82,8 +80,8 @@ header {
 
 .seguimiento {
     width: 100%;
-   position: relative;
-   left: 120px;
+    position: relative;
+    left: 120px;
 }
 
 .seguimiento img {
@@ -108,7 +106,7 @@ header {
     border-radius: 4px;
     border: 1px solid #eee;
     height: 250px;
-      overflow: hidden;
+    overflow: hidden;
 }
 
 .fecha {
@@ -124,7 +122,7 @@ header {
 
 .flecha {
     font-size: 30px;
-       padding: 10px 20px;
+    padding: 10px 20px;
 }
 
 .imagenes-productos {
@@ -141,7 +139,7 @@ header {
     height: 140px;
     object-fit: contain;
     position: relative;
-    top:-50px;
+    top: -50px;
 
 }
 
@@ -279,5 +277,241 @@ header {
     height: 40px;
     object-fit: contain;
     /*se ajusta completamente dentro de su contenedor sin recortarse ni deformarse.*/
+
+}
+
+@media (max-width: 1024px) {
+
+    header {
+        padding: 15px 20px;
+    }
+
+    .logo {
+        width: 140px;
+        height: auto;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+
+    .nav-item img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .nav-links li a {
+        font-size: 16px;
+    }
+
+    .titulo {
+        font-size: 40px;
+    }
+
+    .seguimiento {
+        left: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .seguimiento img {
+        width: 95%;
+    }
+
+    .pedido {
+        gap: 15px;
+
+        margin-bottom: 60px;
+    }
+
+    .productos-pedido {
+        height: 320px;
+    }
+
+    .imagenes-productos {
+        height: 170px;
+        padding: 10px;
+    }
+
+    .imagenes-productos img {
+        width: 150px;
+        height: 150px;
+        top: 20px;
+    }
+
+    .fecha {
+        font-size: 20px;
+    }
+
+    .acciones {
+        width: 180px;
+        margin-top: 60px;
+    }
+
+    .acciones button {
+        font-size: 14px;
+        height: 40px;
+    }
+
+    .fondo {
+        width: 100%;
+        min-height: 200px;
+        background-color: #272925;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .pie-de-pagina {
+        width: 180px;
+        height: 100px;
+        flex-shrink: 0;
+    }
+
+    .informacion h2,
+    .Redes-sociales h2 {
+        font-size: 24px;
+    }
+
+    .informacion p,
+    .ubicación p {
+        font-size: 16px;
+    }
+
+    .iconos img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .separador {
+        height: 90px;
+    }
+
+    .fondo hr {
+        width: 90px;
+    }
+
+}
+
+@media (max-width: 768px){
+
+    header{
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .logo{
+        width: 130px;
+        height: auto;
+    }
+
+    .nav-links{
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+    }
+
+    .nav-item img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .nav-links li a{
+        font-size: 14px;
+    }
+
+    .titulo{
+        font-size: 32px;
+    }
+
+    .seguimiento{
+        left: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .seguimiento img{
+        width: 95%;
+    }
+
+    .pedido{
+        flex-direction: column;
+        margin: 15px;
+    }
+
+    .productos-pedido{
+        height: auto;
+    }
+
+    .fecha{
+        font-size: 18px;
+    }
+
+    .imagenes-productos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        height: auto;
+        padding: 20px;
+    }
+
+    .imagenes-productos img{
+        width: 110px;
+        height: 110px;
+        top: 0;
+    }
+
+    .acciones{
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .acciones button{
+        width: 100%;
+        height: 45px;
+    }
+
+    
+  
+    /* FOOTER */
+    .fondo {
+        flex-direction: column;
+        text-align: center;
+
+        height: auto;
+        min-height: auto;
+
+        padding: 20px 0;
+        gap: 20px;
+    }
+
+    .separador,
+    .fondo hr {
+        display: none;
+    }
+
+    .Redes-sociales {
+        font-size: 20px;
+        gap: 15px;
+    }
+
+    .Redes-sociales h2,
+    .informacion h2 {
+        font-size: 18px;
+    }
+
+    .informacion p,
+    .ubicación p {
+        font-size: 16px;
+    }
+
+    .iconos {
+        flex-wrap: wrap;
+    }
+
 
 }
