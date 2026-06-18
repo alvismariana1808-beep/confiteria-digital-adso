@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Confitería Digital ADSO </title>
+    <link rel="stylesheet" href="../styles/metodos.css">
+
+</head>
+<div class="contenedor-pago">
+
+    <h1>Métodos de pago.</h1>
+    <p>Selecciona tu método preferido y realiza tu pago</p>
+
+    <div class="metodos">
+        <div class="opcion activa">
+            <img src="../assets/images/metodos/189f4f9a-7e2d-4b38-a1e5-25c04d074cae.png" alt="tarjeta">
+            <span>Tarjeta de créditos</span>
+        </div>
+
+        <div class="opcion">
+            <img src="../assets/images/metodos/pse.png" alt="pse">
+            <span>PSE</span>
+        </div>
+    </div>
+
+    <div class="tarjeta-preview">
+        <img src="../assets/images/metodos/189f4f9a-7e2d-4b38-a1e5-25c04d074cae.png" alt="tarjeta">
+    </div>
+
+    <label>Número de tarjeta:</label>
+    <input type="text" placeholder="4532 1234 5678 9012">
+
+    <label>Propietario:</label>
+    <input type="text" placeholder="María Gómez">
+
+    <div class="fila-datos">
+
+        <div class="campo">
+            <label>Fecha Vencimiento</label>
+            <input type="text" placeholder="MM / AA">
+        </div>
+
+        <div class="campo">
+            <label>Código de seguridad CVC:</label>
+            <input type="text" placeholder="123">
+        </div>
+
+    </div>
+
+    <div class="terminos">
+        <input type="checkbox">
+        <label>Acepto términos y condiciones</label>
+    </div>
+
+    <div class="botones">
+        <a href="../pages/carrito.html" class="btn-atras">Atrás</a>
+        <button class="btn-pagar">Realizar pago</button>
+    </div>
+
+</div>
+</html>
